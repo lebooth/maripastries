@@ -1,0 +1,28 @@
+:root{--cream:#F7EED8;--choc:#2A1405;--rasp:#842936;--pink:#E1AFBB;--rose:#C98E9E;--blush:#DD9BA9;--parch:#EADFC6;--display:var(--font-display),'Goudy Bookletter 1911',serif;--body:var(--font-body),'Sorts Mill Goudy',Georgia,serif}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--choc);font-family:var(--body);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:var(--rasp);text-decoration:none}
+a:hover{color:var(--choc)}
+input,select,textarea,button{font:inherit;color:inherit}
+section[id]{scroll-margin-top:56px}
+.display{font-family:var(--display);font-weight:400}
+.eyebrow{font-family:var(--display);letter-spacing:.3em;font-size:13px;color:var(--rasp)}
+.btn{background:var(--rasp);color:var(--cream);border:none;padding:13px 28px;font-family:var(--display);letter-spacing:.2em;font-size:13px;cursor:pointer;display:inline-block}
+.btn:hover{background:var(--choc);color:var(--cream)}
+.btn-ghost{white-space:nowrap;background:none;border:1px solid var(--cream);color:var(--cream);padding:10px 22px;font-family:var(--display);letter-spacing:.2em;font-size:13px;cursor:pointer}
+.btn-ghost:hover{background:var(--cream);color:var(--rasp)}
+.link-under{background:none;border:none;border-bottom:1px solid var(--rasp);color:var(--rasp);cursor:pointer;font-family:var(--display);letter-spacing:.16em;font-size:12px;padding:4px 0}
+.cream-link{color:var(--cream)}
+.cream-link:hover{color:var(--pink)}
+.field{display:flex;flex-direction:column;gap:6px;font-family:var(--display);letter-spacing:.14em;font-size:12px}
+.field input,.field select{border:none;border-bottom:1px solid var(--choc);background:transparent;padding:8px 0;font-family:var(--body);font-size:17px;letter-spacing:0;outline:none}
+.field textarea{border:1px solid var(--choc);background:transparent;padding:10px;font-family:var(--body);font-size:17px;letter-spacing:0;outline:none;resize:vertical}
+.faq-q{width:100%;background:none;border:none;color:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 0;text-align:left;cursor:pointer;font-size:16px}
+.faq-q:hover{color:var(--pink)}
+@keyframes mpBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes mpSpin{to{transform:rotate(360deg)}}
+@keyframes mpRoad{from{background-position:0 0}to{background-position:-120px 0}}
+@keyframes mpDrift{from{transform:translateX(110vw)}to{transform:translateX(-200px)}}
+@keyframes mpPulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
